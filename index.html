@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pedro Agüero — Desarrollador Fullstack</title>
+  <meta name="description" content="Desarrollador fullstack especializado en construir aplicaciones web que resuelven problemas reales.">
+  <meta name="author" content="Pedro Agüero">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>PA</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor-dot hide-mobile" id="cursor-dot"></div>
+  <div class="cursor-ring hide-mobile" id="cursor-ring"></div>
+
+  <!-- Reading progress -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav id="main-nav">
+    <button class="nav-logo" data-scroll="home">
+      <span class="nav-logo-icon">
+        <span>PA</span>
+      </span>
+      <span class="nav-logo-text">Pedro Agüero</span>
+    </button>
+
+    <div class="nav-links hide-mobile">
+      <button class="nav-pill active" data-scroll="home">inicio</button>
+      <button class="nav-pill" data-scroll="about">sobre mí</button>
+      <button class="nav-pill" data-scroll="stack">stack</button>
+      <button class="nav-pill" data-scroll="projects">proyectos</button>
+      <button class="nav-pill" data-scroll="contact">contacto</button>
+      <a href="https://wa.me/5492234233487" class="btn-copper" style="margin-left:12px; font-size:13px; padding:10px 22px;">Contacto →</a>
+    </div>
+
+    <button class="mobile-btn hide-desktop" id="mobile-btn" aria-label="Menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <button class="mobile-menu-link" data-scroll="home">inicio</button>
+    <button class="mobile-menu-link" data-scroll="about">sobre mí</button>
+    <button class="mobile-menu-link" data-scroll="stack">stack</button>
+    <button class="mobile-menu-link" data-scroll="projects">proyectos</button>
+    <button class="mobile-menu-link" data-scroll="contact">contacto</button>
+    <a href="https://wa.me/5492234233487" class="btn-copper" style="margin-top:16px;">Contacto →</a>
+  </div>
+
+  <main>
+    <!-- ====== HERO ====== -->
+    <section id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <div class="fi">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span class="hero-badge-text">Disponible para trabajar · Mar del Plata, AR</span>
+          </div>
+        </div>
+
+        <div class="fi delay-1">
+          <h1 class="hero-title">
+            Ingeniería web para <br>
+            <span class="color-copper">productos reales.</span>
+          </h1>
+        </div>
+
+        <div class="fi delay-2">
+          <p class="hero-desc">
+            Desarrollador Fullstack. Construyo sistemas escalables desde la arquitectura de bases de datos hasta interfaces dinámicas orientadas al usuario.
+          </p>
+        </div>
+
+        <div class="fi delay-3 hero-actions">
+          <button class="btn-primary" data-scroll="projects">Ver proyectos →</button>
+          <a href="https://github.com/pedroagueroo" class="btn-ghost">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/pedro-ag%C3%BCero-1853a92b2" class="btn-ghost">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="section-wrapper">
+      <div class="fi">
+        <p class="sec-label">
+          <span class="sec-label-num">01</span>
+          <span class="sec-label-line"></span>
+          SOBRE MÍ
+        </p>
+        <h2 class="section-title">
+          Construyendo <br>
+          <span class="color-muted">desde los fundamentos.</span>
+        </h2>
+      </div>
+
+      <div class="two-col">
+        <div class="fi delay-1">
+          <div class="about-card card-lift">
+            <div class="about-fact">
+              <div class="about-fact-icon">🎓</div>
+              <p class="about-fact-text">
+                Tengo 21 años, vivo en Mar del Plata (Argentina) y soy <strong>Técnico Universitario en Programación</strong> egresado de la UTN.
+              </p>
+            </div>
+            <div class="divider" style="margin:20px 0; opacity:0.5;"></div>
+            <div class="about-fact">
+              <div class="about-fact-icon">💻</div>
+              <p class="about-fact-text">
+                Desarrollo bajo un perfil <strong>Fullstack</strong>. Tengo experiencia probada en el ecosistema JavaScript/TypeScript, Java y bases de datos relacionales.
+              </p>
+            </div>
+            <div class="divider" style="margin:20px 0; opacity:0.5;"></div>
+            <div class="about-fact">
+              <div class="about-fact-icon">🚀</div>
+              <p class="about-fact-text">
+                Me enfoco en el <strong>delivery de producto</strong>. Actualmente mantengo dos plataformas en producción: un SaaS de reservas (Traveris) y un sistema de analítica de datos en tiempo real (HoopStats).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col" style="gap:16px;">
+          <div class="fi delay-2">
+            <div class="card-lift" style="background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:24px;">
+              <h3 style="font-family:var(--font-sans); font-weight:700; font-size:16px; margin-bottom:12px;">Objetivo Profesional</h3>
+              <p style="font-family:var(--font-sans); font-size:14px; color:var(--muted); line-height:1.7;">
+                Busco mi primera oportunidad formal como <strong>Software Engineer Jr.</strong> (Frontend, Backend o Fullstack) en un equipo donde pueda aplicar mis conocimientos arquitectónicos, aprender buenas prácticas corporativas y escalar sistemas complejos.
+              </p>
+            </div>
+          </div>
+          <div class="fi delay-3">
+            <div class="card-lift" style="background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:24px; display:flex; gap:20px; align-items:center;">
+              <div style="font-size:32px;">🌐</div>
+              <div>
+                <h3 style="font-family:var(--font-sans); font-weight:700; font-size:15px; margin-bottom:4px;">Disponibilidad</h3>
+                <p style="font-family:var(--font-sans); font-size:13px; color:var(--muted); margin:0;">Incorporación inmediata. Trabajo Remoto o Híbrido.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STACK ====== -->
+    <section id="stack">
+      <div style="max-width:1140px; margin:0 auto;">
+        <div class="fi">
+          <p class="sec-label">
+            <span class="sec-label-num color-sand">02</span>
+            <span class="sec-label-line"></span>
+            STACK TECNOLÓGICO
+          </p>
+          <h2 class="section-title">
+            Herramientas <br>
+            <span class="color-sand">de desarrollo.</span>
+          </h2>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Frontend -->
+          <div class="fi bento-item bento-front card-lift">
+            <div class="bento-header">01 // Frontend & Interfaces</div>
+            <div>
+              <div class="bento-tools-list">
+                <span class="bento-tool">Angular <span class="bento-tool-separator">/</span></span>
+                <span class="bento-tool">React <span class="bento-tool-separator">/</span></span>
+                <span class="bento-tool" style="color:var(--sand);">TypeScript</span>
+              </div>
+              <p class="bento-sub">Arquitectura de SPAs, estado complejo y maquetación semántica.</p>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="fi delay-1 bento-item bento-back card-lift">
+            <div class="bento-header">02 // Backend & APIs</div>
+            <div>
+              <div class="bento-tools-list">
+                <span class="bento-tool">Node.js <span class="bento-tool-separator">/</span></span>
+                <span class="bento-tool" style="color:var(--sand);">Java</span>
+              </div>
+              <p class="bento-sub">APIs RESTful, microservicios y lógica de negocio.</p>
+            </div>
+          </div>
+
+          <!-- Base de datos -->
+          <div class="fi delay-2 bento-item bento-db card-lift">
+            <div class="bento-header">03 // Bases de Datos</div>
+            <div>
+              <div class="bento-tools-list">
+                <span class="bento-tool">PostgreSQL <span class="bento-tool-separator">/</span></span>
+                <span class="bento-tool" style="color:var(--sand);">MySQL</span>
+              </div>
+              <p class="bento-sub">Modelado relacional, Supabase y Neon.</p>
+            </div>
+          </div>
+
+          <!-- Infra -->
+          <div class="fi delay-3 bento-item bento-tools card-lift">
+            <div class="bento-header">04 // Infraestructura & Control</div>
+            <div>
+              <div class="bento-tools-list">
+                <span class="bento-tool">Git <span class="bento-tool-separator">/</span></span>
+                <span class="bento-tool">GitHub <span class="bento-tool-separator">/</span></span>
+                <span class="bento-tool" style="color:var(--sand);">Vercel <span class="bento-tool-separator">/</span> Railway</span>
+              </div>
+              <p class="bento-sub">Versionado colaborativo y despliegue continuo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects" class="section-wrapper">
+      <div class="fi">
+        <p class="sec-label">
+          <span class="sec-label-num">03</span>
+          <span class="sec-label-line"></span>
+          PROYECTOS EN PRODUCCIÓN
+        </p>
+        <h2 class="section-title">
+          Demostraciones <br>
+          <span class="color-muted">del mundo real.</span>
+        </h2>
+      </div>
+
+      <div class="flex-col" style="gap:32px;">
+        <!-- Traveris -->
+        <div class="fi">
+          <article class="project-card card-lift">
+            <div class="project-accent-stripe"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <div>
+                  <div class="project-title-row">
+                    <span class="project-num">01</span>
+                    <h3 class="project-name">Traveris</h3>
+                    <span class="project-metric">2 agencias · +600 clientes</span>
+                  </div>
+                  <p class="project-tagline">SaaS de gestión financiera y reservas para agencias de viajes.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/pedroagueroo/traveris-pro.git" class="ul-hover">Front ↗</a>
+                  <a href="https://github.com/pedroagueroo/BackTraqveris.git" class="ul-hover">Back ↗</a>
+                  <a href="https://traveris-pro.vercel.app/login" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
+                </div>
+              </div>
+
+              <div class="project-creds">
+                <span>🔐 Credenciales Demo:</span>
+                <span class="cred-box">usuario: <strong>usuariop</strong></span>
+                <span class="cred-box">contraseña: <strong>prueba</strong></span>
+              </div>
+
+              <div class="project-details">
+                <div>
+                  <p class="detail-label copper">EL PROBLEMA</p>
+                  <p class="detail-text">Las agencias de viajes dependían de herramientas legacy ineficientes y no contaban con un SaaS que unificara reservas, control financiero y CRM en un solo lugar.</p>
+                </div>
+                <div>
+                  <p class="detail-label muted">LA SOLUCIÓN</p>
+                  <p class="detail-text">Desarrollo desde cero de un SaaS B2B con motor de reservas, gestión de roles multi-tenant y un esquema relacional con trazabilidad contable completa.</p>
+                </div>
+              </div>
+
+              <div class="project-highlights">
+                <p class="detail-label muted">CARACTERÍSTICAS CLAVE</p>
+                <div class="highlights-grid">
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Autenticación multi-tenant robusta.</div>
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Esquema relacional con PostgreSQL.</div>
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Despliegue distribuido (Vercel + Railway).</div>
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Plataforma auditada con datos en producción.</div>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HoopStats -->
+        <div class="fi delay-1">
+          <article class="project-card card-lift">
+            <div class="project-accent-stripe"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <div>
+                  <div class="project-title-row">
+                    <span class="project-num">02</span>
+                    <h3 class="project-name">HoopStats</h3>
+                    <span class="project-metric">+20 usuarios activos</span>
+                  </div>
+                  <p class="project-tagline">Plataforma analítica de estadísticas de la NBA en tiempo real.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/augussto12/HoopStats.git" class="ul-hover">Front ↗</a>
+                  <a href="https://github.com/augussto12/HoopStats-backend.git" class="ul-hover">Back ↗</a>
+                  <a href="https://www.hoopstats.com.ar/" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
+                </div>
+              </div>
+
+              <div class="project-details">
+                <div>
+                  <p class="detail-label copper">EL PROBLEMA</p>
+                  <p class="detail-text">Los fanáticos y analistas de basketball tenían que buscar estadísticas en fuentes dispersas. Faltaba una solución unificada con datos dinámicos y accionables.</p>
+                </div>
+                <div>
+                  <p class="detail-label muted">LA SOLUCIÓN</p>
+                  <p class="detail-text">Un pipeline de datos que consume feeds en vivo de la NBA, procesado por un backend optimizado de Node.js, y servido a dashboards visuales en tiempo real.</p>
+                </div>
+              </div>
+
+              <div class="project-highlights">
+                <p class="detail-label muted">CARACTERÍSTICAS CLAVE</p>
+                <div class="highlights-grid">
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Pipeline de consumo de datos en vivo.</div>
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> API RESTful optimizada para baja latencia.</div>
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Visualización de datos interactiva en Angular.</div>
+                  <div class="highlight-item"><span class="highlight-arrow">▸</span> Backend escalable en Hostinger.</div>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">REST APIs</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact">
+      <div class="fi">
+        <p class="sec-label" style="justify-content:center;">
+          <span class="sec-label-num">04</span>
+          <span class="sec-label-line"></span>
+          CONTACTO
+        </p>
+        <h2 class="contact-title">
+          ¿Iniciamos una <br>
+          <em class="color-copper text-italic">conversación?</em>
+        </h2>
+        <p class="contact-desc">
+          Si buscas incorporar un desarrollador a tu equipo corporativo o tienes un proyecto de producto digital, me encantaría hablar.
+        </p>
+      </div>
+
+      <div class="fi delay-1">
+        <div class="contact-box">
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:aguerop47@gmail.com" class="contact-link ul-hover">aguerop47@gmail.com</a>
+            </div>
+            <div class="divider"></div>
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <a href="https://wa.me/5492234233487" class="contact-link ul-hover">+54 9 223 423-3487</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fi delay-2" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:64px;">
+        <a href="https://wa.me/5492234233487" class="btn-copper" style="font-size:15px; padding:14px 32px;">WhatsApp →</a>
+        <a href="https://www.linkedin.com/in/pedro-ag%C3%BCero-1853a92b2" class="btn-ghost" style="font-size:15px; padding:14px 32px;">LinkedIn ↗</a>
+        <a href="https://github.com/pedroagueroo" class="btn-ghost" style="font-size:15px; padding:14px 32px;">GitHub ↗</a>
+      </div>
+
+      <div class="fi delay-3">
+        <p class="footer-text">
+          Diseñado y desarrollado por Pedro Agüero — 2026
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
