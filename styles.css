@@ -385,6 +385,7 @@ body {
   display: block;
   object-fit: cover;
   transition: transform .5s cubic-bezier(.22,1,.36,1), filter .5s cubic-bezier(.22,1,.36,1);
+  filter: blur(8px) brightness(0.9);
 }
 .preview-overlay {
   position: absolute;
@@ -393,7 +394,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity .5s cubic-bezier(.22,1,.36,1);
 }
 .preview-btn {
@@ -404,19 +405,19 @@ body {
   font-weight: 600;
   padding: 12px 24px;
   border-radius: 100px;
-  transform: translateY(10px);
+  transform: translateY(0);
   transition: transform .5s cubic-bezier(.22,1,.36,1);
   box-shadow: 0 8px 32px rgba(13,12,10,0.15);
 }
 .preview-link:hover img {
   transform: scale(1.03);
-  filter: blur(8px) brightness(0.9);
+  filter: none;
 }
 .preview-link:hover .preview-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 .preview-link:hover .preview-btn {
-  transform: translateY(0);
+  transform: translateY(10px);
 }
 
 .project-creds {
