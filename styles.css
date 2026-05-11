@@ -262,6 +262,7 @@ body {
 .color-copper { 
   background: linear-gradient(90deg, var(--text-main), var(--text-muted)); 
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+  padding: 0.05em 0.1em; /* prevents webkit clipping on italic question marks */
 }
 .color-muted { color: var(--text-muted); }
 .font-display { font-family: var(--font-display); }
