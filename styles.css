@@ -2,9 +2,9 @@
 
 :root {
   /* Tech Dark Palette */
-  --bg-base: #09090B; /* Deep Zinc */
-  --bg-card: rgba(24, 24, 27, 0.5); /* Glass card */
-  --bg-card-hover: rgba(39, 39, 42, 0.6);
+  --bg-base: #111827; /* Soft Slate/Navy Dark */
+  --bg-card: rgba(31, 41, 55, 0.4); /* Glass card */
+  --bg-card-hover: rgba(55, 65, 81, 0.5);
   --text-main: #F8FAFC;
   --text-muted: #94A3B8;
   
@@ -116,7 +116,7 @@ body {
 }
 
 #main-nav.scrolled {
-  background: rgba(9, 9, 11, 0.7);
+  background: rgba(17, 24, 39, 0.7);
   backdrop-filter: blur(16px) saturate(180%);
   border-bottom: 1px solid var(--border-glass);
 }
@@ -168,7 +168,7 @@ body {
 
 #mobile-menu {
   position: fixed; inset: 0; z-index: 190;
-  background: rgba(9, 9, 11, 0.95); backdrop-filter: blur(16px);
+  background: rgba(17, 24, 39, 0.95); backdrop-filter: blur(16px);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
   opacity: 0; pointer-events: none; transition: opacity 0.3s;
 }
