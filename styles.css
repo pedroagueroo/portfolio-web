@@ -344,31 +344,53 @@ body {
 }
 .about-fact-text { font-family: var(--font-sans); font-size: 15px; color: var(--text-muted); line-height: 1.6; padding-top: 10px; }
 
-/* bento stack specific */
-.bento-grid {
-  display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px;
+/* skills stack specific */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
-.bento-item {
-  padding: clamp(20px, 2.5vw, 32px); 
-  display: flex; flex-direction: column; justify-content: space-between;
+.skill-pill {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  padding: 12px 24px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.3s cubic-bezier(.22,1,.36,1), border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: default;
 }
-.bento-item:hover { 
-  border-color: var(--accent-purple);
+.skill-pill:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 10px 24px rgba(0, 240, 255, 0.15), 0 0 15px rgba(255, 255, 255, 0.05);
+  background: var(--bg-card-hover);
 }
-
-.bento-front { grid-column: span 8; }
-.bento-back { grid-column: span 4; }
-.bento-db { grid-column: span 5; }
-.bento-tools { grid-column: span 7; }
-
-.bento-header { font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 24px; }
-.bento-tools-list { display: flex; flex-wrap: wrap; gap: 12px; }
-.bento-tool {
-  font-family: var(--font-display); font-size: clamp(24px, 3vw, 36px); font-weight: 800; color: var(--text-main); letter-spacing: -.02em;
-  display: flex; align-items: center; gap: 8px;
+.skill-pill img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.3s;
 }
-.bento-tool-separator { color: rgba(255, 255, 255, 0.1); font-weight: 300; }
-.bento-sub { font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); margin-top: 16px; }
+.skill-pill:hover img {
+  transform: scale(1.1) rotate(-5deg);
+}
+.skill-pill img.icon-white {
+  filter: invert(1) brightness(2);
+}
+.skill-pill span {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
 
 /* projects specific */
 .projects-grid {
@@ -484,7 +506,7 @@ body {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .bento-front, .bento-back, .bento-db, .bento-tools { grid-column: span 12; }
+  .skills-wrapper { max-width: 100%; }
 }
 @media (max-width: 768px) {
   .hide-mobile { display: none !important; }
