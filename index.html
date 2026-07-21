@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Pedro Agüero — Desarrollador Fullstack</title>
-  <meta name="description" content="Desarrollador fullstack especializado en construir aplicaciones web que resuelven problemas reales.">
+  <meta name="description" content="Desarrollador fullstack especializado en construir aplicaciones web que resuelven problemas reales. Angular, React, Node.js, PostgreSQL.">
   <meta name="author" content="Pedro Agüero">
-  
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pedro Agüero — Desarrollador Fullstack">
+  <meta property="og:description" content="Desarrollador fullstack especializado en construir aplicaciones web que resuelven problemas reales.">
+  <meta property="og:url" content="https://pedroaguero.vercel.app">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pedro Agüero — Desarrollador Fullstack">
+  <meta name="twitter:description" content="Desarrollador fullstack especializado en construir aplicaciones web que resuelven problemas reales.">
+
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>PA</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Background Tech Elements -->
+  <!-- Background Elements -->
+  <div class="grain-overlay"></div>
   <div class="tech-grid-bg"></div>
   <div class="ambient-glow glow-1"></div>
   <div class="ambient-glow glow-2"></div>
@@ -30,7 +43,7 @@
 
   <!-- ====== NAVIGATION ====== -->
   <nav id="main-nav">
-    <button class="nav-logo" data-scroll="home">
+    <button class="nav-logo" data-scroll="home" aria-label="Ir al inicio">
       <span class="nav-logo-icon">
         <span>PA</span>
       </span>
@@ -43,10 +56,10 @@
       <button class="nav-pill" data-scroll="stack">stack</button>
       <button class="nav-pill" data-scroll="projects">proyectos</button>
       <button class="nav-pill" data-scroll="contact">contacto</button>
-      <a href="https://wa.me/5492234233487" class="btn-copper" style="margin-left:12px; font-size:13px; padding:10px 22px;">Contacto →</a>
+      <a href="https://wa.me/5492234233487" target="_blank" rel="noopener noreferrer" class="btn-copper" style="margin-left:12px; font-size:13px; padding:10px 22px;">Contacto →</a>
     </div>
 
-    <button class="mobile-btn hide-desktop" id="mobile-btn" aria-label="Menu">
+    <button class="mobile-btn hide-desktop" id="mobile-btn" aria-label="Abrir menú de navegación">
       <div></div>
       <div></div>
       <div></div>
@@ -60,13 +73,12 @@
     <button class="mobile-menu-link" data-scroll="stack">stack</button>
     <button class="mobile-menu-link" data-scroll="projects">proyectos</button>
     <button class="mobile-menu-link" data-scroll="contact">contacto</button>
-    <a href="https://wa.me/5492234233487" class="btn-copper" style="margin-top:16px;">Contacto →</a>
+    <a href="https://wa.me/5492234233487" target="_blank" rel="noopener noreferrer" class="btn-copper" style="margin-top:16px;">Contacto →</a>
   </div>
 
   <main>
     <!-- ====== HERO ====== -->
     <section id="home">
-      <div class="hero-bg"></div>
       <div class="hero-glow"></div>
 
       <div class="hero-content">
@@ -77,11 +89,12 @@
           </div>
         </div>
 
-        <div class="fi delay-1">
-          <h1 class="hero-title">
-            Ingeniería web para <br>
+        <div class="fi delay-1" data-parallax="0.03">
+          <h1 class="hero-name">Pedro Agüero</h1>
+          <p class="hero-title">
+            Ingeniería web para
             <span class="color-copper">productos reales.</span>
-          </h1>
+          </p>
         </div>
 
         <div class="fi delay-2">
@@ -92,8 +105,8 @@
 
         <div class="fi delay-3 hero-actions">
           <button class="btn-primary" data-scroll="projects">Ver proyectos →</button>
-          <a href="https://github.com/pedroagueroo" class="btn-ghost">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/pedro-ag%C3%BCero-1853a92b2" class="btn-ghost">LinkedIn ↗</a>
+          <a href="https://github.com/pedroagueroo" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/pedro-ag%C3%BCero-1853a92b2" target="_blank" rel="noopener noreferrer" class="btn-ghost">LinkedIn ↗</a>
         </div>
       </div>
     </section>
@@ -113,7 +126,7 @@
       </div>
 
       <div class="two-col">
-        <div class="fi delay-1">
+        <div class="fi delay-1" data-reveal="slide-left">
           <div class="about-card card-lift">
             <div class="about-fact">
               <div class="about-fact-icon">🎓</div>
@@ -139,20 +152,20 @@
         </div>
 
         <div class="flex-col" style="gap:16px;">
-          <div class="fi delay-2">
-            <div class="card-lift" style="background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:24px;">
-              <h3 style="font-family:var(--font-sans); font-weight:700; font-size:16px; margin-bottom:12px;">Objetivo Profesional</h3>
-              <p style="font-family:var(--font-sans); font-size:14px; color:var(--muted); line-height:1.7;">
+          <div class="fi delay-2" data-reveal="slide-right">
+            <div class="about-info-card card-lift">
+              <h3>Objetivo Profesional</h3>
+              <p>
                 Busco mi primera oportunidad formal como <strong>Software Engineer Jr.</strong> (Frontend, Backend o Fullstack) en un equipo donde pueda aplicar mis conocimientos arquitectónicos, aprender buenas prácticas corporativas y escalar sistemas complejos.
               </p>
             </div>
           </div>
-          <div class="fi delay-3">
-            <div class="card-lift" style="background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:24px; display:flex; gap:20px; align-items:center;">
-              <div style="font-size:32px;">🌐</div>
+          <div class="fi delay-3" data-reveal="slide-right">
+            <div class="about-availability-card card-lift">
+              <div class="about-availability-emoji">🌐</div>
               <div>
-                <h3 style="font-family:var(--font-sans); font-weight:700; font-size:15px; margin-bottom:4px;">Disponibilidad</h3>
-                <p style="font-family:var(--font-sans); font-size:13px; color:var(--muted); margin:0;">Incorporación inmediata. Trabajo Remoto o Híbrido.</p>
+                <h3>Disponibilidad</h3>
+                <p>Incorporación inmediata. Trabajo Remoto o Híbrido.</p>
               </div>
             </div>
           </div>
@@ -165,7 +178,7 @@
       <div style="max-width:1140px; margin:0 auto;">
         <div class="fi">
           <p class="sec-label">
-            <span class="sec-label-num color-sand">02</span>
+            <span class="sec-label-num">02</span>
             <span class="sec-label-line"></span>
             STACK TECNOLÓGICO
           </p>
@@ -282,14 +295,14 @@
                   <p class="project-tagline">SaaS de gestión financiera y reservas para agencias de viajes.</p>
                 </div>
                 <div class="project-links">
-                  <a href="https://github.com/pedroagueroo/traveris2-front.git" class="ul-hover">Front ↗</a>
-                  <a href="https://github.com/pedroagueroo/traveris2-back.git" class="ul-hover">Back ↗</a>
-                  <a href="https://traverispro.vercel.app/login" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
+                  <a href="https://github.com/pedroagueroo/traveris2-front.git" target="_blank" rel="noopener noreferrer" class="ul-hover">Front ↗</a>
+                  <a href="https://github.com/pedroagueroo/traveris2-back.git" target="_blank" rel="noopener noreferrer" class="ul-hover">Back ↗</a>
+                  <a href="https://traverispro.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
                 </div>
               </div>
 
               <div class="project-preview">
-                <a href="https://traverispro.vercel.app/login" class="preview-link">
+                <a href="https://traverispro.vercel.app/login" target="_blank" rel="noopener noreferrer" class="preview-link">
                   <img src="traveris-preview.png" alt="Traveris Dashboard" loading="lazy">
                   <div class="preview-overlay">
                     <span class="preview-btn">Visitar proyecto ↗</span>
@@ -343,14 +356,14 @@
                   <p class="project-tagline">Plataforma analítica de estadísticas de la NBA en tiempo real.</p>
                 </div>
                 <div class="project-links">
-                  <a href="https://github.com/augussto12/HoopStats.git" class="ul-hover">Front ↗</a>
-                  <a href="https://github.com/augussto12/HoopStats-backend.git" class="ul-hover">Back ↗</a>
-                  <a href="https://www.hoopstats.com.ar/" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
+                  <a href="https://github.com/augussto12/HoopStats.git" target="_blank" rel="noopener noreferrer" class="ul-hover">Front ↗</a>
+                  <a href="https://github.com/augussto12/HoopStats-backend.git" target="_blank" rel="noopener noreferrer" class="ul-hover">Back ↗</a>
+                  <a href="https://www.hoopstats.com.ar/" target="_blank" rel="noopener noreferrer" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
                 </div>
               </div>
 
               <div class="project-preview">
-                <a href="https://www.hoopstats.com.ar/" class="preview-link">
+                <a href="https://www.hoopstats.com.ar/" target="_blank" rel="noopener noreferrer" class="preview-link">
                   <img src="hoopstats-preview.png" alt="HoopStats Dashboard" loading="lazy">
                   <div class="preview-overlay">
                     <span class="preview-btn">Visitar proyecto ↗</span>
@@ -404,13 +417,13 @@
                   <p class="project-tagline">Plataforma integral para restaurantes: menú digital, pedidos WhatsApp, KDS y panel de control.</p>
                 </div>
                 <div class="project-links">
-                  <a href="https://github.com/pedroagueroo/directorder.git" class="ul-hover">Repo ↗</a>
-                  <a href="https://directorder-two.vercel.app/" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
+                  <a href="https://github.com/pedroagueroo/directorder.git" target="_blank" rel="noopener noreferrer" class="ul-hover">Repo ↗</a>
+                  <a href="https://directorder-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
                 </div>
               </div>
 
               <div class="project-preview">
-                <a href="https://directorder-two.vercel.app/" class="preview-link">
+                <a href="https://directorder-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="preview-link">
                   <img src="directorder-preview.png" alt="DirectOrder Dashboard" loading="lazy">
                   <div class="preview-overlay">
                     <span class="preview-btn">Visitar proyecto ↗</span>
@@ -464,13 +477,13 @@
                   <p class="project-tagline">Catálogo interactivo optimizado para alta conversión y experiencia "Mobile-First".</p>
                 </div>
                 <div class="project-links">
-                  <a href="https://github.com/nicopetito/importadosmdp.git" class="ul-hover">Repo ↗</a>
-                  <a href="https://importadosmdp.vercel.app" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
+                  <a href="https://github.com/nicopetito/importadosmdp.git" target="_blank" rel="noopener noreferrer" class="ul-hover">Repo ↗</a>
+                  <a href="https://importadosmdp.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-copper" style="font-size:13px; padding:10px 20px;">Ver aplicación ↗</a>
                 </div>
               </div>
 
               <div class="project-preview">
-                <a href="https://importadosmdp.vercel.app" class="preview-link">
+                <a href="https://importadosmdp.vercel.app" target="_blank" rel="noopener noreferrer" class="preview-link">
                   <img src="importadosmdp-preview.png" alt="ImportadosMDP Catálogo" loading="lazy">
                   <div class="preview-overlay">
                     <span class="preview-btn">Visitar proyecto ↗</span>
@@ -538,16 +551,16 @@
             <div class="divider"></div>
             <div class="contact-item">
               <span class="contact-icon">📱</span>
-              <a href="https://wa.me/5492234233487" class="contact-link ul-hover">+54 9 223 423-3487</a>
+              <a href="https://wa.me/5492234233487" target="_blank" rel="noopener noreferrer" class="contact-link ul-hover">+54 9 223 423-3487</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="fi delay-2" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:64px;">
-        <a href="https://wa.me/5492234233487" class="btn-copper" style="font-size:15px; padding:14px 32px;">WhatsApp →</a>
-        <a href="https://www.linkedin.com/in/pedro-ag%C3%BCero-1853a92b2" class="btn-ghost" style="font-size:15px; padding:14px 32px;">LinkedIn ↗</a>
-        <a href="https://github.com/pedroagueroo" class="btn-ghost" style="font-size:15px; padding:14px 32px;">GitHub ↗</a>
+        <a href="https://wa.me/5492234233487" target="_blank" rel="noopener noreferrer" class="btn-copper" style="font-size:15px; padding:14px 32px;">WhatsApp →</a>
+        <a href="https://www.linkedin.com/in/pedro-ag%C3%BCero-1853a92b2" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="font-size:15px; padding:14px 32px;">LinkedIn ↗</a>
+        <a href="https://github.com/pedroagueroo" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="font-size:15px; padding:14px 32px;">GitHub ↗</a>
       </div>
 
       <div class="fi delay-3">
@@ -558,6 +571,11 @@
     </section>
   </main>
 
+  <!-- Scroll to top -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Volver al inicio">↑</button>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
