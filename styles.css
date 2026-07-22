@@ -866,6 +866,13 @@ body {
   height: 2px;
   background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
   opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+
+.project-accent-stripe.stripe-animate {
+  transform: scaleX(1);
 }
 
 .project-body {
@@ -1165,6 +1172,65 @@ body {
 }
 
 /* ============================================================
+   STAGGERED SKILL PILLS
+   ============================================================ */
+
+.skill-pill.pill-hidden {
+  opacity: 0;
+  transform: translateY(16px) scale(0.92);
+}
+
+.skill-pill.pill-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.5s cubic-bezier(.22,1,.36,1), transform 0.5s cubic-bezier(.22,1,.36,1);
+}
+
+/* ============================================================
+   WORD-BY-WORD REVEAL
+   ============================================================ */
+
+.word-reveal {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.45s cubic-bezier(.22,1,.36,1), transform 0.45s cubic-bezier(.22,1,.36,1);
+  will-change: opacity, transform;
+}
+
+.word-reveal.word-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   ANIMATED SECTION DIVIDERS
+   ============================================================ */
+
+.divider-animate {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+
+.divider-animate.divider-visible {
+  transform: scaleX(1);
+}
+
+/* ============================================================
+   MAGNETIC BUTTON HOVER
+   ============================================================ */
+
+.btn-primary,
+.btn-copper,
+.btn-ghost {
+  transition: transform 0.25s cubic-bezier(.22,1,.36,1), box-shadow 0.25s, background 0.2s, border-color 0.25s, color 0.25s;
+}
+
+/* ============================================================
    ACCESSIBILITY: REDUCED MOTION
    ============================================================ */
 
@@ -1178,4 +1244,8 @@ body {
   html { scroll-behavior: auto; }
   [data-parallax] { transform: none !important; }
   .hero-badge-dot { animation: none; }
+  .word-reveal { opacity: 1; transform: none; }
+  .skill-pill.pill-hidden { opacity: 1; transform: none; }
+  .project-accent-stripe { transform: scaleX(1); }
+  .divider-animate { transform: scaleX(1); }
 }
