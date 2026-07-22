@@ -52,6 +52,18 @@ html {
   background-color: var(--bg-deep);
 }
 
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
 body {
   background-color: var(--bg-deep);
   color: var(--text-primary);
@@ -61,6 +73,25 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+}
+
+/* ── GPU-accelerated layers for smooth scroll ── */
+.grain-overlay,
+.tech-grid-bg,
+.ambient-glow,
+.cursor-dot,
+.cursor-ring,
+#progress-bar,
+#main-nav {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+section,
+.project-card,
+.about-card,
+.skill-pill {
+  contain: layout style;
 }
 
 ::selection {
